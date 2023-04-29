@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import EmpTable from "./EmpTable";
-import { useCollection } from "../hooks/useCollection";
+import { useCollection } from "../../hooks/useCollection";
 const EmployeeManagement = () => {
   const { documents: employees } = useCollection("employees");
   const [searchTerm, setSearchTerm] = useState("");

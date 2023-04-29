@@ -1,6 +1,6 @@
 // EmpTable.js
 import { doc, deleteDoc } from "firebase/firestore";
-import { db } from "../firebase/config";
+import { db } from "../../firebase/config";
 import { Link } from "react-router-dom";
 
 const EmpTable = ({ employees }) => {

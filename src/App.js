@@ -2,15 +2,16 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
-import Home from './components/Home';
-import EmployeeManagement from './components/EmployeeManagement';
-import TripManagement from './components/TripManagement';
-import DriverManagement from './components/DriverManagement';
-import Employee from './components/Employee';
-import EditEmpl from './components/EditEmpl';
-import AddDriver from './components/AddDriver';
-import DriverTable from './components/DriverTable';
-import EditDriver from './components/EditDriver';
+import Home from './pages/home/Home';
+import EmployeeManagement from './pages/employee/EmployeeManagement';
+import TripManagement from './pages/trip/TripManagement';
+import DriverManagement from './pages/driver/DriverManagement';
+import Employee from './pages/employee/Employee';
+import EditEmpl from './pages/employee/EditEmpl';
+import DriverTable from './pages/driver/DriverTable';
+import EditDriver from './pages/driver/EditDriver';
+import AddDriver from './pages/driver/AddDriver';
+
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
               <Route path="/drivers" element={<DriverManagement />} />
               <Route path="/employee" element={<Employee />} />
               <Route path="/edit-employee/:id" element={<EditEmpl />} />
-              <Route path="/add-driver" element={<AddDriver/>} />
+              <Route path="/add-driver" element={<AddDriver />} />
               <Route path="/driver-table" element={<DriverTable />} />
               <Route path="/edit-driver/:id" element={<EditDriver />} />
             </Routes>

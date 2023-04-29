@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import DriverTable from './DriverTable';
-import { useCollection } from '../hooks/useCollection';
+import { useCollection } from '../../hooks/useCollection';
 
 const DriverManagement = () => {
   const { documents: drivers } = useCollection('drivers');
